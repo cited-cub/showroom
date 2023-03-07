@@ -8,7 +8,6 @@ apt-get update
 debconf-set-selections <<< "postfix postfix/main_mailer_type string 'Internet Site'"
 debconf-set-selections <<< "postfix postfix/mailname string $HOSTNAME"
 debconf-set-selections <<< "postfix postfix/root_address string bob"
-debconf-set-selections <<< "postfix postfix/root_address string bob"
 debconf-set-selections <<< "postfix postfix/destinations string $myhostname,smtp1.example.com,node01,localhost"
 debconf-set-selections <<< "postfix postfix/root_address string bob"
 debconf-set-selections <<< "postfix postfix/chattr boolean false"
