@@ -23,3 +23,6 @@ systemctl restart postfix
 postconf -e 'mailbox_size_limit=20480000'
 systemctl restart postfix
 apt-get install s-nail
+postconf -e 'ignore_mx_lookup_error = yes'
+postconf -e 'lmtp_host_lookup = native'
+postconf -e 'smtp_host_lookup = native'
